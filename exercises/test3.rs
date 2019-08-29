@@ -15,11 +15,11 @@ fn string(arg: String) {
 }
 
 fn main() {
-    ("blue");
-    ("red".to_string());
-    (String::from("hi"));
-    ("rust is fun!".to_owned());
-    ("nice weather".into());
+    string_slice("blue");
+    string("red".to_string());
+    string(String::from("hi"));
+    string("rust is fun!".to_owned());
+    string("nice weather".into());
     (format!("Interpolation {}", "Station"));
     (&String::from("abc")[0..1]);
     ("  hello there ".trim());
